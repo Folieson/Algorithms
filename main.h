@@ -7,7 +7,8 @@
 
 #endif //ALGORITHMS_MAIN_H
 
-#include <stdio.h>
 #include "Lesson1/Lesson1.h"
 
 int main();
+void menu();
+typedef enum { false, true } bool;

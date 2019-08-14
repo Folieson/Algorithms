@@ -4,6 +4,7 @@
 CMakeFiles/Algorithms.dir/Lesson1/Lesson1.c.o: ../Lesson1/Lesson1.c
 CMakeFiles/Algorithms.dir/Lesson1/Lesson1.c.o: ../Lesson1/Lesson1.h
 CMakeFiles/Algorithms.dir/Lesson1/Lesson1.c.o: ../Utils/Utils.h
+CMakeFiles/Algorithms.dir/Lesson1/Lesson1.c.o: ../main.h
 
 CMakeFiles/Algorithms.dir/Utils/Utils.c.o: ../Utils/Utils.c
 CMakeFiles/Algorithms.dir/Utils/Utils.c.o: ../Utils/Utils.h

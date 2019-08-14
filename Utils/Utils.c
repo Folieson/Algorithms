@@ -10,7 +10,6 @@ long numbLength(long numb) {
         result++;
         numb /= 10;
     } while (numb);
-    //printf("numbLength = %lld\n",result);
     return result;
 }
 

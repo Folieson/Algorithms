@@ -9,6 +9,8 @@
 /Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Lesson1/Lesson1.c
 Lesson1.h
 /Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Lesson1/Lesson1.h
+../main.h
+/Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/main.h
 
 /Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Lesson1/Lesson1.h
 ../Utils/Utils.h
@@ -19,4 +21,8 @@ math.h
 /Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Utils/math.h
 stdio.h
 -
+
+/Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/main.h
+Lesson1/Lesson1.h
+/Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Lesson1/Lesson1.h
 

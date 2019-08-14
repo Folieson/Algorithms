@@ -3,24 +3,47 @@
 //
 
 #include "Lesson1.h"
+#include "../main.h"
 
-void ex14() {
+void lesson1() {
+    printf("Please, select exercise (from 1 to 14) or 0 to exit to lesson selection\n");
+    bool exit = false;
+    while (!exit) {
+        int exercise = 0;
+        scanf("%d",&exercise);
+        switch (exercise) {
+            case 0:
+                exit = true;
+                break;
+            case 13:
+                lesson1Ex13();
+                break;
+            case 14:
+                lesson1Ex14();
+                break;
+            default:
+                printf("Wrong exercise number\n");
+                break;
+        }
+    }
+}
+
+void lesson1Ex14() {
     long n;
-    //int result = 0;
     long currentNumb = 0;
-    printf("Введите простое число\n");
+    printf("Enter prime number\n");
     scanf("%lld", &n);
 
     while (currentNumb < n) {
-        //printf("\ncurrentNumb = %lld\n",currentNumb);
         long curNumbSqr = pow(currentNumb,2);
         long curNumbLength = numbLength(currentNumb);
         long lastDigits = getLastDigits(curNumbLength,curNumbSqr);
-        //printf("lastDigits = %lld\n",lastDigits);
-
         if (currentNumb == lastDigits) printf("Automorphic number = %lld\n",currentNumb);
 
         currentNumb++;
     }
-    printf("ex14 finished\n");
+}
+
+void lesson1Ex13() {
+
 }
