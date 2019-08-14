@@ -4,7 +4,17 @@
 
 #include "Utils.h"
 
-int numbLength(int numb) {
+long numbLength(long numb) {
+    long result = 0;
+    do {
+        result++;
+        numb /= 10;
+    } while (numb);
+    //printf("numbLength = %lld\n",result);
+    return result;
+}
 
-    return 0;
+long getLastDigits(long length, long numb) {
+    long divisor = pow(10,length);
+    return numb % divisor;
 }

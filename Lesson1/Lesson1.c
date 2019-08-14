@@ -5,13 +5,22 @@
 #include "Lesson1.h"
 
 void ex14() {
-    double n;
-    int result = 0;
-    printf("Введите простое число");
-    scanf("%lf", &n);
+    long n;
+    //int result = 0;
+    long currentNumb = 0;
+    printf("Введите простое число\n");
+    scanf("%lld", &n);
 
-    while (result < n) {
-        double tmp = pow(n,2);
-        int nLength =
+    while (currentNumb < n) {
+        //printf("\ncurrentNumb = %lld\n",currentNumb);
+        long curNumbSqr = pow(currentNumb,2);
+        long curNumbLength = numbLength(currentNumb);
+        long lastDigits = getLastDigits(curNumbLength,curNumbSqr);
+        //printf("lastDigits = %lld\n",lastDigits);
+
+        if (currentNumb == lastDigits) printf("Automorphic number = %lld\n",currentNumb);
+
+        currentNumb++;
     }
+    printf("ex14 finished\n");
 }

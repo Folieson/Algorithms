@@ -7,4 +7,8 @@
 
 #endif //ALGORITHMS_UTILS_H
 
-int numbLength (int numb);
+#include "math.h"
+#include <stdio.h>
+
+long numbLength (long numb);
+long getLastDigits(long length, long numb);

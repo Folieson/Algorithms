@@ -7,9 +7,9 @@
 
 #endif //ALGORITHMS_LESSON1_H
 
-#include <stdio.h>
-#include <math.h>
-
+//#include <stdio.h>
+//#include <math.h>
+#include "../Utils/Utils.h"
 //Алгоритмы и структуры данных. Простые алгоритмы
 
 /*14. * Автоморфные числа. Натуральное число называется автоморфным, если оно равно последним цифрам своего квадрата.
