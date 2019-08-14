@@ -6,9 +6,9 @@
 #include "../main.h"
 
 void lesson1() {
-    printf("Please, select exercise (from 1 to 14) or 0 to exit to lesson selection\n");
     bool exit = false;
     while (!exit) {
+        printf("Please, select exercise (from 1 to 14) or 0 to exit to lesson selection\n");
         int exercise = 0;
         scanf("%d",&exercise);
         switch (exercise) {
