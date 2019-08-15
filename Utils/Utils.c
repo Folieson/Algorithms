@@ -29,3 +29,9 @@ void customRand(int numbCount) {
     }
 }
 
+int getMaxNumb(int a, int b) {
+    int max = a;
+    if (max < b) max = b;
+    return max;
+}
+

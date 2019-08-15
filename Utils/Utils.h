@@ -14,3 +14,4 @@
 long numbLength (long numb);
 long getLastDigits(long length, long numb);
 void customRand(int numbCount);
+int getMaxNumb(int a, int b);

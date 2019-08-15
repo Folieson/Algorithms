@@ -15,6 +15,9 @@ void lesson1() {
             case 0:
                 exit = true;
                 break;
+            case 12:
+                lesson1Ex12();
+                break;
             case 13:
                 lesson1Ex13();
                 break;
@@ -51,4 +54,15 @@ void lesson1Ex13() {
     int randNumbCount = 0;
     scanf("%d",&randNumbCount);
     customRand(randNumbCount);
+}
+
+void lesson1Ex12() {
+    int a,b,c;
+    printf("Enter a\n");
+    scanf("%d",&a);
+    printf("Enter b\n");
+    scanf("%d",&b);
+    printf("Enter c\n");
+    scanf("%d",&c);
+    printf("The biggest number = %d\n", getMaxNumb(c,getMaxNumb(a,b)));
 }
