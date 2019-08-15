@@ -15,6 +15,9 @@ void lesson1() {
             case 0:
                 exit = true;
                 break;
+            case 2:
+                lesson1Ex2();
+                break;
             case 3:
                 lesson1Ex3();
                 break;
@@ -255,5 +258,22 @@ void lesson1Ex3() {
     b = a - b;
     a = a - b;
     printf("a = %d, b = %d\n", a, b);
+}
+
+void lesson1Ex2() {
+    printf("Enter first number\n");
+    int a = 0;
+    scanf("%d",&a);
+    printf("Enter second number\n");
+    int b = 0;
+    scanf("%d",&b);
+    printf("Enter third number\n");
+    int c = 0;
+    scanf("%d",&c);
+    printf("Enter fourth number\n");
+    int d = 0;
+    scanf("%d",&d);
+
+    printf("Max number = %d\n", getMaxNumb(getMaxNumb(getMaxNumb(a,b),c),d));
 }
 
