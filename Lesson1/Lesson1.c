@@ -15,6 +15,9 @@ void lesson1() {
             case 0:
                 exit = true;
                 break;
+            case 6:
+                lesson1Ex6();
+                break;
             case 7:
                 lesson1Ex7();
                 break;
@@ -157,5 +160,19 @@ void lesson1Ex7() {
         printf("Same colour\n");
     else
         printf("Different colour");
+}
+
+void lesson1Ex6() {
+    printf("Enter your age\n");
+    int age = 0;
+    scanf("%d",&age);
+
+    if ((age % 10 == 0) || (age % 10 >= 5))
+        printf("Тебе %d лет\n",age);
+    else if ((age % 10 > 1) && (age % 10 < 5))
+        printf("Тебе %d года\n",age);
+    else if ((age % 10 == 1) && (age != 11))
+        printf("Тебе %d год\n",age);
+
 }
 
