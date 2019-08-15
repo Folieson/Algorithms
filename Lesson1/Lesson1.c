@@ -15,6 +15,9 @@ void lesson1() {
             case 0:
                 exit = true;
                 break;
+            case 10:
+                lesson1Ex10();
+                break;
             case 11:
                 lesson1Ex11();
                 break;
@@ -83,5 +86,19 @@ void lesson1Ex11() {
         }
     }
     if (counter != 0) printf("result = %g \n", (sum/counter));
+}
+
+void lesson1Ex10() {
+    printf("Enter n > 0\n");
+    int inputNumb = 0;
+    scanf("%d",&inputNumb);
+    while (inputNumb) {
+       if (((inputNumb % 10) % 2) != 0) {
+           printf("True\n");
+           return;
+       }
+       inputNumb /= 10;
+    }
+    printf("False\n");
 }
 
