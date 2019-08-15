@@ -15,6 +15,9 @@ void lesson1() {
             case 0:
                 exit = true;
                 break;
+            case 5:
+                lesson1Ex5();
+                break;
             case 6:
                 lesson1Ex6();
                 break;
@@ -173,6 +176,39 @@ void lesson1Ex6() {
         printf("Тебе %d года\n",age);
     else if ((age % 10 == 1) && (age != 11))
         printf("Тебе %d год\n",age);
+    else
+        printf("Wrong age number\n");
 
+}
+
+void lesson1Ex5() {
+    printf("Enter month number\n");
+    int month = 0;
+    scanf("%d",&month);
+
+    switch (month) {
+        case 12:
+        case 1:
+        case 2:
+            printf("Winter\n");
+            break;
+        case 3:
+        case 4:
+        case 5:
+            printf("Spring\n");
+            break;
+        case 6:
+        case 7:
+        case 8:
+            printf("Summer\n");
+            break;
+        case 9:
+        case 10:
+        case 11:
+            printf("Autumn\n");
+            break;
+        default:
+            printf("Wrong month number\n");
+    }
 }
 
