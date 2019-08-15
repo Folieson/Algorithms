@@ -15,6 +15,9 @@ void lesson1() {
             case 0:
                 exit = true;
                 break;
+            case 8:
+                lesson1Ex8();
+                break;
             case 9:
                 lesson1Ex9();
                 break;
@@ -118,6 +121,20 @@ void lesson1Ex9() {
         counter++;
     }
     if (n == 0) k = 0;
-    printf("quotient  = %d, remainder = %d\n",counter,(k-n));
+    printf("Quotient  = %d, remainder = %d\n",counter,(k-n));
+}
+
+void lesson1Ex8() {
+    printf("Enter a\n");
+    int a = 0;
+    scanf("%d",&a);
+    printf("Enter b\n");
+    int b = 0;
+    scanf("%d",&b);
+
+    while (a <= b) {
+        printf("%g, %g\n",pow(a,2),pow(a,3));
+        a++;
+    }
 }
 
