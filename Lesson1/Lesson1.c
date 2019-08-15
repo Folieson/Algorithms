@@ -15,6 +15,9 @@ void lesson1() {
             case 0:
                 exit = true;
                 break;
+            case 11:
+                lesson1Ex11();
+                break;
             case 12:
                 lesson1Ex12();
                 break;
@@ -66,3 +69,19 @@ void lesson1Ex12() {
     scanf("%d",&c);
     printf("The biggest number = %d\n", getMaxNumb(c,getMaxNumb(a,b)));
 }
+
+void lesson1Ex11() {
+    int inputNumb = 1;
+    double sum = 0;
+    int counter = 0;
+    while (inputNumb) {
+        printf("Enter 0 to get result or any other numb to continue calculating\n");
+        scanf("%d",&inputNumb);
+        if ((inputNumb % 10) == 8) {
+            sum += inputNumb;
+            counter++;
+        }
+    }
+    if (counter != 0) printf("result = %g \n", (sum/counter));
+}
+
