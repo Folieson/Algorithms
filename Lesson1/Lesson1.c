@@ -15,6 +15,9 @@ void lesson1() {
             case 0:
                 exit = true;
                 break;
+            case 4:
+                lesson1Ex4();
+                break;
             case 5:
                 lesson1Ex5();
                 break;
@@ -210,5 +213,30 @@ void lesson1Ex5() {
         default:
             printf("Wrong month number\n");
     }
+}
+
+void lesson1Ex4() {
+    printf("Enter a\n");
+    double a = 0;
+    scanf("%lf",&a);
+    printf("Enter b\n");
+    double b = 0;
+    scanf("%lf",&b);
+    printf("Enter c\n");
+    double c = 0;
+    scanf("%lf",&c);
+    double discriminant = pow(b,2) - 4*a*c;
+    printf("discriminant = %g\n",discriminant);
+    if(discriminant < 0)
+        printf("No x\n");
+    else if (discriminant == 0) {
+        double x = (-b + sqrt(discriminant)) / (2 * a);
+        printf("x = %g\n",x);
+    } else {
+        double x1 = (-b + sqrt(discriminant)) / (2 * a);
+        double x2 = (-b - sqrt(discriminant)) / (2 * a);
+        printf("x1 = %g, x2 = %g\n",x1,x2);
+    }
+
 }
 
