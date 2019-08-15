@@ -15,6 +15,9 @@ void lesson1() {
             case 0:
                 exit = true;
                 break;
+            case 9:
+                lesson1Ex9();
+                break;
             case 10:
                 lesson1Ex10();
                 break;
@@ -100,5 +103,21 @@ void lesson1Ex10() {
        inputNumb /= 10;
     }
     printf("False\n");
+}
+
+void lesson1Ex9() {
+    printf("Enter n\n");
+    int n = 0;
+    scanf("%d",&n);
+    printf("Enter k\n");
+    int k = 0;
+    scanf("%d",&k);
+    int counter = 0;
+    while (n >= k) {
+        n -= k;
+        counter++;
+    }
+    if (n == 0) k = 0;
+    printf("quotient  = %d, remainder = %d\n",counter,(k-n));
 }
 
