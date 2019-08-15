@@ -15,6 +15,9 @@ void lesson1() {
             case 0:
                 exit = true;
                 break;
+            case 1:
+                lesson1Ex1();
+                break;
             case 2:
                 lesson1Ex2();
                 break;
@@ -275,5 +278,16 @@ void lesson1Ex2() {
     scanf("%d",&d);
 
     printf("Max number = %d\n", getMaxNumb(getMaxNumb(getMaxNumb(a,b),c),d));
+}
+
+void lesson1Ex1() {
+    printf("Enter your weight in kg\n");
+    double weight = 0.0;
+    scanf("%lf",&weight);
+    printf("Enter your height in m\n");
+    double height = 0.0;
+    scanf("%lf",&height);
+
+    printf("Your BMI = %lf\n",weight/(pow(height,2)));
 }
 
