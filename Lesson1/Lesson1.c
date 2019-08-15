@@ -31,7 +31,7 @@ void lesson1() {
 void lesson1Ex14() {
     long n;
     long currentNumb = 0;
-    printf("Enter prime number\n");
+    printf("Enter natural number\n");
     scanf("%lld", &n);
 
     while (currentNumb < n) {
@@ -45,5 +45,10 @@ void lesson1Ex14() {
 }
 
 void lesson1Ex13() {
-
+    int randomNumb = rand() % 100 + 1;
+    printf("std rand numb = %d\n", randomNumb);
+    printf("Enter count of random numbers\n");
+    int randNumbCount = 0;
+    scanf("%d",&randNumbCount);
+    customRand(randNumbCount);
 }

@@ -9,6 +9,8 @@
 
 #include "math.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 long numbLength (long numb);
 long getLastDigits(long length, long numb);
+void customRand(int numbCount);
