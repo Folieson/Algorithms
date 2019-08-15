@@ -15,6 +15,9 @@ void lesson1() {
             case 0:
                 exit = true;
                 break;
+            case 7:
+                lesson1Ex7();
+                break;
             case 8:
                 lesson1Ex8();
                 break;
@@ -136,5 +139,23 @@ void lesson1Ex8() {
         printf("%g, %g\n",pow(a,2),pow(a,3));
         a++;
     }
+}
+
+void lesson1Ex7() {
+    Point point1;
+    Point point2;
+    printf("Enter x1\n");
+    scanf("%d",&point1.x);
+    printf("Enter y1\n");
+    scanf("%d",&point1.y);
+    printf("Enter x2\n");
+    scanf("%d",&point2.x);
+    printf("Enter y2\n");
+    scanf("%d",&point2.y);
+
+    if (getPointColour(point1) == getPointColour(point2))
+        printf("Same colour\n");
+    else
+        printf("Different colour");
 }
 

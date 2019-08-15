@@ -35,3 +35,10 @@ int getMaxNumb(int a, int b) {
     return max;
 }
 
+colour getPointColour(Point point) {
+    if (((point.x % 2 == 0) && (point.y % 2 == 0)) || ((point.x % 2 != 0) && (point.y % 2 != 0)))
+        return black;
+    else
+        return white;
+}
+
