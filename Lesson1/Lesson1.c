@@ -15,6 +15,9 @@ void lesson1() {
             case 0:
                 exit = true;
                 break;
+            case 3:
+                lesson1Ex3();
+                break;
             case 4:
                 lesson1Ex4();
                 break;
@@ -237,6 +240,20 @@ void lesson1Ex4() {
         double x2 = (-b - sqrt(discriminant)) / (2 * a);
         printf("x1 = %g, x2 = %g\n",x1,x2);
     }
+}
 
+void lesson1Ex3() {
+    //b. *без использования третьей переменной
+    printf("Enter first number\n");
+    int a = 0;
+    scanf("%d",&a);
+    printf("Enter second number\n");
+    int b = 0;
+    scanf("%d",&b);
+
+    a = a + b;
+    b = a - b;
+    a = a - b;
+    printf("a = %d, b = %d\n", a, b);
 }
 
