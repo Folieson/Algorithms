@@ -42,3 +42,11 @@ colour getPointColour(Point point) {
         return white;
 }
 
+void convertToBin(long n) {
+    if (n == 0) {
+        return;
+    }
+    convertToBin(n / 2);
+    printf("%d",  n % 2);
+}
+

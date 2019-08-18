@@ -11,6 +11,8 @@
 #include "math.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include "../main.h"
+
 typedef enum { black, white } colour;
 struct Point {
     int x;
@@ -23,4 +25,7 @@ long getLastDigits(long length, long numb);
 void customRand(int numbCount);
 int getMaxNumb(int a, int b);
 colour getPointColour(Point point);
+
+void convertToBin(long n);
+
 
