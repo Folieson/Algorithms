@@ -1,0 +1,3 @@
+/Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/cmake-build-debug/CMakeFiles/Algorithms.dir

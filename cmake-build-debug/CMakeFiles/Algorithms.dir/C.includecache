@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Lesson1/Lesson1.c
+Lesson1.h
+/Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Lesson1/Lesson1.h
+../main.h
+/Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/main.h
+
+/Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Lesson1/Lesson1.h
+../Utils/Utils.h
+/Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Utils/Utils.h
+
+/Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Utils/Utils.h
+math.h
+/Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Utils/math.h
+stdio.h
+-
+stdlib.h
+-
+
+/Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/main.h
+Lesson1/Lesson1.h
+/Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Lesson1/Lesson1.h
+
