@@ -74,3 +74,33 @@ long powRecursion2(long a, int b) {
     if ((b % 2) == 0) return powRecursion2(a * a, b / 2);
     else return a * powRecursion2(a, b - 1);
 }
+
+
+endNum = 20;
+counter = 0;
+void command1(int num) {
+    if(num == endNum){
+        counter++;
+        return;
+    }
+    if(num > endNum){
+        return;
+    }
+
+    command1(num + 1);
+    command2(num + 1);
+
+}
+
+void command2(int num) {
+    if(num == endNum){
+        counter++;
+        return;
+    }
+    if(num > endNum){
+        return;
+    }
+
+    command1(num * 2);
+    command2(num * 2);
+}

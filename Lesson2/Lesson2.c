@@ -58,5 +58,8 @@ void lesson2Ex2() {
 }
 
 void lesson2Ex3() {
-
+    int startNum = 3;
+    command1(startNum);
+    command2(startNum);
+    printf("counter = %d\n",counter);
 }

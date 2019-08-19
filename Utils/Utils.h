@@ -30,3 +30,8 @@ void convertToBin(long n);
 long powFor(int a, int b);
 long powRecursion(long a, int b);
 long powRecursion2(long a, int b);
+
+int endNum;
+int counter;
+void command1(int num);
+void command2(int num);
