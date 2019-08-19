@@ -27,5 +27,6 @@ int getMaxNumb(int a, int b);
 colour getPointColour(Point point);
 
 void convertToBin(long n);
-
-
+long powFor(int a, int b);
+long powRecursion(long a, int b);
+long powRecursion2(long a, int b);

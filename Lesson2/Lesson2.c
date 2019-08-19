@@ -39,6 +39,21 @@ void lesson2Ex1() {
 }
 
 void lesson2Ex2() {
+    printf("Enter base number\n");
+    int a = 0;
+    scanf("%d",&a);
+    printf("Enter power\n");
+    int b = 0;
+    scanf("%d",&b);
+
+    long res1 = powFor(a,b);
+    printf("powFor(%d,%d) = %ld\n",a,b,res1);
+
+    long res2 = powRecursion(a,b);
+    printf("powRecursion(%d,%d) = %ld\n",a,b,res2);
+
+    long res3 = powRecursion2(a,b);
+    printf("powRecursion2(%d,%d) = %ld\n",a,b,res3);
 
 }
 
