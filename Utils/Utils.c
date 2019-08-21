@@ -42,3 +42,83 @@ colour getPointColour(Point point) {
         return white;
 }
 
+void convertToBin(long n) {
+    if (n == 0) {
+        return;
+    }
+    convertToBin(n / 2);
+    printf("%d",  n % 2);
+}
+
+long powFor(int a, int b) {
+    long n = 1;
+    while (b) {
+        if (b % 2) {
+            b--;
+            n *= a;
+        } else {
+            a *= a;
+            b /= 2;
+        }
+    }
+    return n;
+}
+
+long powRecursion(long a, int b) {
+    if (b == 0) return 1;
+    else return a * powRecursion(a, b - 1);
+}
+
+long powRecursion2(long a, int b) {
+    if (b == 0) return 1;
+    if ((b % 2) == 0) return powRecursion2(a * a, b / 2);
+    else return a * powRecursion2(a, b - 1);
+}
+
+
+
+endNum = 20;
+//counter = 0;
+//void command1(int num) {
+//    if(num == endNum){
+//        counter++;
+//        return;
+//    }
+//    if(num > endNum){
+//        return;
+//    }
+//
+//    command1(num + 1);
+//    command2(num + 1);
+//
+//}
+//
+//void command2(int num) {
+//    if(num == endNum){
+//        counter++;
+//        return;
+//    }
+//    if(num > endNum){
+//        return;
+//    }
+//
+//    command1(num * 2);
+//    command2(num * 2);
+//}
+
+int l2Ex3For(int s, int e) {
+    int a[100] = { 0 };
+
+    a[s] = 1;
+
+    for (int n = s + 1; n <= e; n++) a[n] = n % 2 == 0 ? a[n - 1] + a[n / 2] : a[n - 1];
+
+    return a[e];
+}
+
+int l2Ex3Recursion(int s, int e) {
+    if (e < s)return 0;
+    if (e == s)return 1;
+
+    return l2Ex3Recursion(s + 1, e) + l2Ex3Recursion(s * 2, e);
+}

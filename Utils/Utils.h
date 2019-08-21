@@ -11,6 +11,8 @@
 #include "math.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include "../main.h"
+
 typedef enum { black, white } colour;
 struct Point {
     int x;
@@ -24,3 +26,15 @@ void customRand(int numbCount);
 int getMaxNumb(int a, int b);
 colour getPointColour(Point point);
 
+void convertToBin(long n);
+long powFor(int a, int b);
+long powRecursion(long a, int b);
+long powRecursion2(long a, int b);
+
+int endNum;
+int counter;
+//void command1(int num);
+//void command2(int num);
+
+int l2Ex3For(int s, int e);
+int l2Ex3Recursion(int s, int e);

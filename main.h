@@ -7,7 +7,9 @@
 
 #endif //ALGORITHMS_MAIN_H
 
+#pragma once
 #include "Lesson1/Lesson1.h"
+#include "Lesson2/Lesson2.h"
 
 int main();
 void menu();

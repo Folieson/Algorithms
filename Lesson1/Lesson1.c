@@ -3,7 +3,6 @@
 //
 
 #include "Lesson1.h"
-#include "../main.h"
 
 void lesson1() {
     bool exit = false;
