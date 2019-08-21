@@ -122,3 +122,47 @@ int l2Ex3Recursion(int s, int e) {
 
     return l2Ex3Recursion(s + 1, e) + l2Ex3Recursion(s * 2, e);
 }
+
+void swap(int *a, int *b) {
+    int tmp = *a;
+    *a = *b;
+    *b = tmp;
+}
+
+void printArray(int N, int *a) {
+    int i;
+    for(i = 0; i < N; i++)
+        printf("%6i", a[i]);
+    printf("\n");
+}
+
+int bubbleSort(int N, int *a) {
+    int swaps = 0;
+    for(int i = 0; i < N; i++) {
+        for (int j = 0; j < N - 1; j++)
+            if (a[j] > a[j + 1]) {
+                swap(&a[j], &a[j + 1]);
+                swaps++;
+            }
+        printArray(N, a);
+    }
+    return swaps;
+}
+
+int bubbleSortOptimized(int N, int *a) {
+
+    int swaps = 0;
+    for(int i = 0; i < N - 1; i++) {
+        int counter = 0;
+        for(int j = 0; j < N - 1 - i; j++)
+            if (a[j] > a[j + 1]) {
+                swap(&a[j], &a[j + 1]);
+                counter++;
+            }
+        swaps += counter;
+        printArray(N, a);
+            if (counter <= 1) break;
+    }
+
+    return swaps;
+}
