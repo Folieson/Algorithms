@@ -166,3 +166,32 @@ int bubbleSortOptimized(int N, int *a) {
 
     return swaps;
 }
+
+int shakerSort(int N, int *a) {
+    int swaps = 0;
+    int left = 0;
+    int right = N - 1;
+
+    while (left < right) {
+        for (int i = left; i < right; i++) {
+            if (a[i] > a[i + 1]) {
+                swap(&a[i],&a[i + 1]);
+                swaps++;
+            }
+        }
+        right--;
+        for (int i = right; i < left; i--) {
+            if (a[i - 1] > a[i]) {
+                swap(&a[i - 1], &a[i]);
+                swaps++;
+            }
+        }
+    }
+    return swaps;
+}
+
+void fillArray(int N, int *a) {
+    for (int i = 0; i < N; ++i) {
+        a[i] = rand() % N;
+    }
+}

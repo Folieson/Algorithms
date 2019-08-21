@@ -42,7 +42,9 @@ int l2Ex3Recursion(int s, int e);
 #define SMALL_SIZE  20
 #define MID_SIZE    10000
 #define HIGH_SIZE   100000
+void fillArray(int N, int *a);
 void swap(int *a, int *b);
 void printArray(int N, int *a);
 int bubbleSort(int N, int *a);
 int bubbleSortOptimized(int N, int *a);
+int shakerSort(int N, int *a);

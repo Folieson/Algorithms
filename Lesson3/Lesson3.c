@@ -35,9 +35,7 @@ void lesson3() {
 
 void lesson3Ex1() {
     int smallArr[SMALL_SIZE];
-    for (int i = 0; i < SMALL_SIZE; ++i) {
-        smallArr[i] = rand() % SMALL_SIZE;
-    }
+    fillArray(SMALL_SIZE,&smallArr);
     int smallArr2[SMALL_SIZE];
     for (int j = 0; j < SMALL_SIZE; ++j) {
         smallArr2[j] = smallArr[j];
@@ -61,7 +59,12 @@ void lesson3Ex1() {
 }
 
 void lesson3Ex2() {
-
+    int smallArr[SMALL_SIZE];
+    fillArray(SMALL_SIZE,&smallArr);
+    printArray(SMALL_SIZE,smallArr);
+    int shakerSortSwaps = shakerSort(SMALL_SIZE,smallArr);
+    printArray(SMALL_SIZE,smallArr);
+    printf("shakerSort swaps = %d\n", shakerSortSwaps);
 }
 
 void lesson3Ex3() {
