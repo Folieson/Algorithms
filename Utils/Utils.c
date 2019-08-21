@@ -76,31 +76,49 @@ long powRecursion2(long a, int b) {
 }
 
 
+
 endNum = 20;
-counter = 0;
-void command1(int num) {
-    if(num == endNum){
-        counter++;
-        return;
-    }
-    if(num > endNum){
-        return;
-    }
+//counter = 0;
+//void command1(int num) {
+//    if(num == endNum){
+//        counter++;
+//        return;
+//    }
+//    if(num > endNum){
+//        return;
+//    }
+//
+//    command1(num + 1);
+//    command2(num + 1);
+//
+//}
+//
+//void command2(int num) {
+//    if(num == endNum){
+//        counter++;
+//        return;
+//    }
+//    if(num > endNum){
+//        return;
+//    }
+//
+//    command1(num * 2);
+//    command2(num * 2);
+//}
 
-    command1(num + 1);
-    command2(num + 1);
+int l2Ex3For(int s, int e) {
+    int a[100] = { 0 };
 
+    a[s] = 1;
+
+    for (int n = s + 1; n <= e; n++) a[n] = n % 2 == 0 ? a[n - 1] + a[n / 2] : a[n - 1];
+
+    return a[e];
 }
 
-void command2(int num) {
-    if(num == endNum){
-        counter++;
-        return;
-    }
-    if(num > endNum){
-        return;
-    }
+int l2Ex3Recursion(int s, int e) {
+    if (e < s)return 0;
+    if (e == s)return 1;
 
-    command1(num * 2);
-    command2(num * 2);
+    return l2Ex3Recursion(s + 1, e) + l2Ex3Recursion(s * 2, e);
 }

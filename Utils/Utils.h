@@ -33,5 +33,8 @@ long powRecursion2(long a, int b);
 
 int endNum;
 int counter;
-void command1(int num);
-void command2(int num);
+//void command1(int num);
+//void command2(int num);
+
+int l2Ex3For(int s, int e);
+int l2Ex3Recursion(int s, int e);

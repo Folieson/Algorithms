@@ -6,9 +6,17 @@
 
 #IncludeRegexTransform: 
 
+/Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Lesson1/Lesson1.c
+Lesson1.h
+/Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Lesson1/Lesson1.h
+
 /Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Lesson1/Lesson1.h
 ../Utils/Utils.h
 /Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Utils/Utils.h
+
+/Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Lesson2/Lesson2.c
+Lesson2.h
+/Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Lesson2/Lesson2.h
 
 /Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Lesson2/Lesson2.h
 ../Utils/Utils.h
@@ -26,6 +34,12 @@ stdio.h
 stdlib.h
 -
 ../main.h
+/Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/main.h
+
+/Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/main.c
+mach/machine.h
+-
+main.h
 /Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/main.h
 
 /Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/main.h
