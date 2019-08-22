@@ -195,3 +195,16 @@ void fillArray(int N, int *a) {
         a[i] = rand() % N;
     }
 }
+
+int binSearch(int arrLength, int *a, int value) {
+    int left = 0;
+    int right = arrLength - 1;
+    int middle = arrLength / 2;
+    while ((left <= right) && (a[middle] != value)) {
+        if (a[middle] < value) left = middle + 1;
+        else right = middle - 1;
+        middle = left + (right - left) / 2;
+    }
+    if (a[middle] == value) return middle;
+    else return -1;
+}

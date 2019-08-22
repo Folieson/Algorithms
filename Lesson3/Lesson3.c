@@ -68,7 +68,11 @@ void lesson3Ex2() {
 }
 
 void lesson3Ex3() {
-
+    int arr[SMALL_SIZE];
+    fillArray(SMALL_SIZE,&arr);
+    shakerSort(SMALL_SIZE,&arr);
+    printArray(SMALL_SIZE,arr);
+    printf("binSearch result = %d\n",binSearch(SMALL_SIZE,arr,6));
 }
 
 void lesson3Ex4() {
