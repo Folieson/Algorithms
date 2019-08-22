@@ -34,47 +34,58 @@ void lesson3() {
 }
 
 void lesson3Ex1() {
-    int smallArr[SMALL_SIZE];
-    fillArray(SMALL_SIZE,&smallArr);
-    int smallArr2[SMALL_SIZE];
-    for (int j = 0; j < SMALL_SIZE; ++j) {
+    int smallArr[ARR_SIZE];
+    fillArray(ARR_SIZE,&smallArr);
+    int smallArr2[ARR_SIZE];
+    for (int j = 0; j < ARR_SIZE; ++j) {
         smallArr2[j] = smallArr[j];
     }
-    printArray(SMALL_SIZE,smallArr);
-//    int midArr[MID_SIZE];
-//    for (int i = 0; i < MID_SIZE; ++i) {
-//        midArr[i] = rand() % MID_SIZE;
-//    }
-//    int highArr[HIGH_SIZE];
-//    for (int i = 0; i < HIGH_SIZE; ++i) {
-//        midArr[i] = rand() % HIGH_SIZE;
-//    }
-    int bubbleSortSwaps = bubbleSort(SMALL_SIZE,&smallArr);
+    printArray(ARR_SIZE,smallArr);
+
+    int bubbleSortSwaps = bubbleSort(ARR_SIZE, &smallArr);
     printf("bubbleSort swaps = %d\n", bubbleSortSwaps);
     printf("-------\n");
-    printArray(SMALL_SIZE,smallArr2);
-    int bubbleSortSwapsOptimized = bubbleSortOptimized(SMALL_SIZE,&smallArr2);
+    printArray(ARR_SIZE,smallArr2);
+    int bubbleSortSwapsOptimized = bubbleSortOptimized(ARR_SIZE, &smallArr2);
     printf("bubbleSort swaps = %d\n", bubbleSortSwapsOptimized);
-    printArray(SMALL_SIZE,smallArr2);
+    printArray(ARR_SIZE,smallArr2);
 }
 
 void lesson3Ex2() {
-    int smallArr[SMALL_SIZE];
-    fillArray(SMALL_SIZE,&smallArr);
-    printArray(SMALL_SIZE,smallArr);
-    int shakerSortSwaps = shakerSort(SMALL_SIZE,smallArr);
-    printArray(SMALL_SIZE,smallArr);
+    int smallArr[ARR_SIZE];
+    fillArray(ARR_SIZE,&smallArr);
+    printArray(ARR_SIZE,smallArr);
+    int shakerSortSwaps = shakerSort(ARR_SIZE, smallArr);
+    printArray(ARR_SIZE,smallArr);
     printf("shakerSort swaps = %d\n", shakerSortSwaps);
 }
 
 void lesson3Ex3() {
-    int arr[SMALL_SIZE];
-    fillArray(SMALL_SIZE,&arr);
-    shakerSort(SMALL_SIZE,&arr);
-    printArray(SMALL_SIZE,arr);
-    printf("binSearch result = %d\n",binSearch(SMALL_SIZE,arr,6));
+    int arr[ARR_SIZE];
+    fillArray(ARR_SIZE,&arr);
+    shakerSort(ARR_SIZE, &arr);
+    printArray(ARR_SIZE,arr);
+    printf("binSearch result = %d\n", binSearch(ARR_SIZE, arr, 6));
 }
 
 void lesson3Ex4() {
+    int arr[ARR_SIZE];
+    fillArray(ARR_SIZE,&arr);
+    int arr2[ARR_SIZE];
+    int arr3[ARR_SIZE];
+    for (int i = 0; i < ARR_SIZE ; ++i) {
+        arr2[i] = arr[i];
+        arr3[i] = arr[i];
+    }
+    long long int bubbleSortSwaps = bubbleSort(ARR_SIZE, &arr);
+    printf("bubbleSort swaps = %lld \n",bubbleSortSwaps);
 
+    long long int bubbleSortOptimizedSwaps = bubbleSortOptimized(ARR_SIZE, &arr2);
+    printf("bubbleSortOptimized swaps = %lld \n",bubbleSortOptimizedSwaps);
+
+    long long int shakerSortSwaps = shakerSort(ARR_SIZE, &arr3);
+    printf("shakerSort swaps = %lld \n",shakerSortSwaps);
+
+//    long long int binSearchLoopIterations = 0;
+//    binSearch(ARR_SIZE, arr3, 19);
 }

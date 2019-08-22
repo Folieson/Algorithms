@@ -1,0 +1,16 @@
+Table 1
+;;Количество перестановок;;;
+Название;Число элементов;long long  bubble_sort( int *arr, int arr_size );long long  bubble_sort_non_optimize( int *arr, int arr_size );long long  shake_sort_optimize( int *arr, int arr_size );
+SMALL_SIZE;1000;250409;250424;250424;
+MID_SIZE;10000;25214757;25214872;25214872;
+HIGH_SIZE;100000;2497088532;2497088639;2497088639;
+;;;;;
+;;Количество вхождений в цикл;;;
+Название;Число элементов;long long  bubble_sort( int *arr, int arr_size );long long  bubble_sort_non_optimize( int *arr, int arr_size );long long  shake_sort_optimize( int *arr, int arr_size );
+SMALL_SIZE;1000;935;1000;999;
+MID_SIZE;10000;9787;10000;9999;
+HIGH_SIZE;100000;99304;100000;99999;
+;;;;;
+;;Количество отбрасываний неподходящей части;;;
+Название;Число элементов;int binary_search(const int *arr, const int arr_size, int searching_value, long long *drives_in_bin_search);;;
+SMALL_SIZE;1000;8;;;

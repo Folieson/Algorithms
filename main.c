@@ -1,7 +1,6 @@
 //
 // Created by Андрей Понамарчук on 2019-08-14.
 //
-#include <mach/machine.h>
 #include "main.h"
 int main() {
     printf("Hello!\n");

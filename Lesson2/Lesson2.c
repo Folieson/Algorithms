@@ -59,10 +59,7 @@ void lesson2Ex2() {
 
 void lesson2Ex3() {
     int startNum = 3;
-//    command1(startNum);
-//    command2(startNum);
-//    printf("counter = %d\n",counter);
-
+    int endNum = 20;
     printf("l2Ex3For() result = %d\n", l2Ex3For(startNum, endNum));
 
     printf("l2Ex3Recursion() result = %d\n", l2Ex3Recursion(startNum, endNum));

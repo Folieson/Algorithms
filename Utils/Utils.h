@@ -31,21 +31,14 @@ long powFor(int a, int b);
 long powRecursion(long a, int b);
 long powRecursion2(long a, int b);
 
-int endNum;
-int counter;
-//void command1(int num);
-//void command2(int num);
-
 int l2Ex3For(int s, int e);
 int l2Ex3Recursion(int s, int e);
 
-#define SMALL_SIZE  20
-//#define MID_SIZE    10000
-//#define HIGH_SIZE   100000
+#define ARR_SIZE  100000
 void fillArray(int N, int *a);
 void swap(int *a, int *b);
 void printArray(int N, int *a);
-int bubbleSort(int N, int *a);
-int bubbleSortOptimized(int N, int *a);
-int shakerSort(int N, int *a);
+long long int bubbleSort(int N, int *a);
+long long int bubbleSortOptimized(int N, int *a);
+long long int shakerSort(int N, int *a);
 int binSearch(int N, int *a, int value);
