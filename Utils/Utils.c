@@ -75,37 +75,6 @@ long powRecursion2(long a, int b) {
     else return a * powRecursion2(a, b - 1);
 }
 
-
-
-endNum = 20;
-//counter = 0;
-//void command1(int num) {
-//    if(num == endNum){
-//        counter++;
-//        return;
-//    }
-//    if(num > endNum){
-//        return;
-//    }
-//
-//    command1(num + 1);
-//    command2(num + 1);
-//
-//}
-//
-//void command2(int num) {
-//    if(num == endNum){
-//        counter++;
-//        return;
-//    }
-//    if(num > endNum){
-//        return;
-//    }
-//
-//    command1(num * 2);
-//    command2(num * 2);
-//}
-
 int l2Ex3For(int s, int e) {
     int a[100] = { 0 };
 
@@ -121,4 +90,99 @@ int l2Ex3Recursion(int s, int e) {
     if (e == s)return 1;
 
     return l2Ex3Recursion(s + 1, e) + l2Ex3Recursion(s * 2, e);
+}
+
+void swap(int *a, int *b) {
+    int tmp = *a;
+    *a = *b;
+    *b = tmp;
+}
+
+void printArray(int N, int *a) {
+    int i;
+    for(i = 0; i < N; i++)
+        printf("%6i", a[i]);
+    printf("\n");
+}
+
+long long int bubbleSort(int N, int *a) {
+    long long int swaps = 0;
+    long long int loopIterations = 0;
+    for(int i = 0; i < N; i++) {
+        loopIterations++;
+        for (int j = 0; j < N - 1; j++)
+            if (a[j] > a[j + 1]) {
+                swap(&a[j], &a[j + 1]);
+                swaps++;
+            }
+        //printArray(N, a);
+    }
+    printf("bubbleSort loopIterations = %lld \n", loopIterations);
+    return swaps;
+}
+
+long long int bubbleSortOptimized(int N, int *a) {
+    long long int swaps = 0;
+    long long int loopIterations = 0;
+    for(int i = 0; i < N - 1; i++) {
+        loopIterations++;
+        long long int counter = 0;
+        for(int j = 0; j < N - 1 - i; j++)
+            if (a[j] > a[j + 1]) {
+                swap(&a[j], &a[j + 1]);
+                counter++;
+            }
+        swaps += counter;
+        //printArray(N, a);
+            if (counter <= 1) break;
+    }
+    printf("bubbleSortOptimized loopIterations = %lld \n", loopIterations);
+    return swaps;
+}
+
+long long int shakerSort(int N, int *a) {
+    long long int swaps = 0;
+    int left = 0;
+    int right = N - 1;
+    long long int loopIterations = 0;
+    while (left < right) {
+        loopIterations++;
+        for (int i = left; i < right; i++) {
+            if (a[i] > a[i + 1]) {
+                swap(&a[i],&a[i + 1]);
+                swaps++;
+            }
+        }
+        right--;
+        for (int i = right; i < left; i--) {
+            if (a[i - 1] > a[i]) {
+                swap(&a[i - 1], &a[i]);
+                swaps++;
+            }
+        }
+    }
+    printf("shakerSort loopIterations = %lld \n", loopIterations);
+    return swaps;
+}
+
+void fillArray(int N, int *a) {
+    for (int i = 0; i < N; ++i) {
+        a[i] = rand() % N;
+    }
+}
+
+int binSearch(int N, int *a, int value) {
+    int left = 0;
+    int right = N - 1;
+    int middle = N / 2;
+    long long int loopIterations = 0;
+    while ((left <= right) && (a[middle] != value)) {
+        loopIterations++;
+        if (a[middle] < value) left = middle + 1;
+        else right = middle - 1;
+        middle = left + (right - left) / 2;
+    }
+    printf("binSearch loopIterations = %lld \n", loopIterations);
+    if (a[middle] == value) return middle;
+    else return -1;
 }

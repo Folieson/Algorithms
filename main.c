@@ -1,7 +1,6 @@
 //
 // Created by Андрей Понамарчук on 2019-08-14.
 //
-#include <mach/machine.h>
 #include "main.h"
 int main() {
     printf("Hello!\n");
@@ -23,6 +22,9 @@ void menu() {
                 break;
             case 2:
                 lesson2();
+                break;
+            case 3:
+                lesson3();
                 break;
             default:
                 printf("Wrong lesson number\n");
