@@ -11,6 +11,7 @@
 #include "Lesson1/Lesson1.h"
 #include "Lesson2/Lesson2.h"
 #include "Lesson3/Lesson3.h"
+#include "Lesson4/Lesson4.h"
 
 int main();
 void menu();
