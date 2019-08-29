@@ -265,3 +265,27 @@ void Zero(int n, int m, int (*a)[5]) {
         for(j = 0; j < m; j++)
             a[i][j] = 0;
 }
+
+void Print2(int n, int m, int (*a)[3]) {
+    int i, j;
+    for(i = 0; i < n; i++) {
+        for(j = 0; j < m; j++)
+            printf("%4d", a[i][j]);
+        printf("\n");
+    }
+
+}
+
+void Print3(int n, int m, int a[10][8]) {
+    int i, j;
+    for(i = 0; i < n; i++) {
+        for(j = 0; j < m; j++)
+            printf("%4d", a[i][j]);
+        printf("\n");
+    }
+}
+
+int max(int a, int b){
+    if (a > b) return a;
+    else return b;
+}
