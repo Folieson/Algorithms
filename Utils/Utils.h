@@ -68,7 +68,7 @@ void Print3(int n, int m, int a[10][8]);
 int max(int a, int b);
 
 //lesson4
-#define T int
+#define T char
 #define MaxN 1000
 T Stack[MaxN];
 
@@ -77,3 +77,12 @@ int N;
 void push(T i);
 
 T pop();
+
+T Queue[MaxN];
+
+int N2;
+int Front;
+
+void push2(T i);
+
+T pop2();

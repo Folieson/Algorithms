@@ -50,5 +50,36 @@ void lesson5Ex2() {
 }
 
 void lesson5Ex3() {
-
+    int stringSize = 8;
+    char expr[] = "{()([]}}";
+    bool wrongExpr = false;
+    for (int i = 0; i < stringSize; ++i) {
+        if((expr[i] == '(') || (expr[i] == '{') || (expr[i] == '['))
+            push(expr[i]);
+        if((expr[i] == ')') || (expr[i] == '}') || (expr[i] == ']')) {
+            char qElem = pop();
+            char elem = expr[i];
+            if (qElem == '(')
+                if (elem != ')') {
+                    wrongExpr = true;
+                    break;
+                }
+            if (qElem == '{')
+                if (elem != '}') {
+                    wrongExpr = true;
+                    break;
+                }
+            if (qElem == '[')
+                if (elem != ']') {
+                    wrongExpr = true;
+                    break;
+                }
+        }
+    }
+    if ((N != -1) || wrongExpr) {
+        printf("wrong expression\n");
+    } else {
+        printf("right expression\n");
+    }
 }
+
