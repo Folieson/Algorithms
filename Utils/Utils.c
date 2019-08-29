@@ -289,3 +289,20 @@ int max(int a, int b){
     if (a > b) return a;
     else return b;
 }
+
+N = -1;
+void push(T i) {
+    if (N < MaxN) {
+        N++;
+        Stack[N] = i;
+    }
+    else
+        printf("Stack overflow");
+}
+
+T pop() {
+    if (N != -1)
+        return Stack[N--];
+    else
+        printf("Stack is empty");
+}

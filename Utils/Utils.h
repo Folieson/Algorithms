@@ -66,3 +66,14 @@ void Pause(int key);
 void Print2(int n, int m, int a[N_L4][M_L4]);
 void Print3(int n, int m, int a[10][8]);
 int max(int a, int b);
+
+//lesson4
+#define T int
+#define MaxN 1000
+T Stack[MaxN];
+
+int N;
+
+void push(T i);
+
+T pop();
