@@ -186,3 +186,106 @@ int binSearch(int N, int *a, int value) {
     if (a[middle] == value) return middle;
     else return -1;
 }
+
+int SearchSolution(int n) {
+    // Если проверка доски возвращает 0, то эта расстановка не подходит
+    if (CheckBoard() == 0) return 0;
+    // Все кони сделал ход на все клетки. Решение найдено
+    if (n == CELLS) return 1;
+    int row;
+    int col;
+    for(row = 0; row < H; row++)
+        for(col = 0; col < W; col++)
+        {
+            if (board[row][col]==0)
+            {
+    // Расширяем SearchSolution
+                board[row][col]=n;
+    // Рекурсивно проверяем, ведёт ли это к решению.
+                if (SearchSolution(n+1)) return 1;
+    // Если мы дошли до этой строки, данное частичное решение
+    // не приводит к полному
+                board[row][col]=0;
+            }
+        }
+    return 0;
+
+}
+
+// Проверка всей доски
+int CheckBoard() {
+    int i, j;
+    for(i = 0; i < H; i++)
+        for(j = 0; j < W; j++)
+            if (board[i][j] != 0)
+                if (CheckHorse(i, j) == 0)
+                    return 0;
+    return 1;
+
+}
+//проверка определенного коня
+int CheckHorse(int x, int y) {
+    int i, j;
+    for(i = 0; i < H; i++)
+        for(j = 0; j < W; j++)
+            // Если нашли фигуру
+            if (board[i][j] != 0)
+                // Если это не наша фигура
+                if (!(i == x && j == y)) {
+                    int t;
+                    if(x>0 && y>1 && board[x-1][y-2]==1) t++;
+                    if(x>0 && y<6 && board[x-1][y+2]==1) t++;
+                    if(x>1 && y>0 && board[x-2][y-1]==1) t++;
+                    if(x>1 && y<7 && board[x-2][y+1]==1) t++;
+                    if(x<7 && y>1 && board[x+1][y-2]==1) t++;
+                    if(x<7 && y<6 && board[x+1][y+2]==1) t++;
+                    if(x<6 && y>0 && board[x+2][y-1]==1) t++;
+                    if(x<6 && y<7 && board[x+2][y+1]==1) t++;
+                    if (t == 0) return 0;
+                }
+// Если мы дошли до этого места, то всё в порядке
+    return 1;
+
+}
+
+void Print(int n, int m, int (*a)[5]) {
+    int i, j;
+    for(i = 0; i < n; i++)
+    {
+        for(j = 0; j < m; j++)
+            printf("%4d", a[i][j]);
+        printf("\n");
+    }
+
+}
+// Очищаем доску
+void Zero(int n, int m, int (*a)[5]) {
+    int i, j;
+    for(i = 0; i < n; i++)
+        for(j = 0; j < m; j++)
+            a[i][j] = 0;
+}
+
+void Print2(int n, int m, int (*a)[3]) {
+    int i, j;
+    for(i = 0; i < n; i++) {
+        for(j = 0; j < m; j++)
+            printf("%4d", a[i][j]);
+        printf("\n");
+    }
+
+}
+
+void Print3(int n, int m, int a[10][8]) {
+    int i, j;
+    for(i = 0; i < n; i++) {
+        for(j = 0; j < m; j++)
+            printf("%4d", a[i][j]);
+        printf("\n");
+    }
+}
+
+int max(int a, int b){
+    if (a > b) return a;
+    else return b;
+}

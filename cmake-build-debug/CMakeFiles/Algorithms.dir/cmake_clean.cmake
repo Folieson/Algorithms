@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Algorithms.dir/Utils/Utils.c.o"
   "CMakeFiles/Algorithms.dir/Lesson2/Lesson2.c.o"
   "CMakeFiles/Algorithms.dir/Lesson3/Lesson3.c.o"
+  "CMakeFiles/Algorithms.dir/Lesson4/Lesson4.c.o"
   "Algorithms.pdb"
   "Algorithms"
 )

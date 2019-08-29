@@ -42,3 +42,27 @@ long long int bubbleSort(int N, int *a);
 long long int bubbleSortOptimized(int N, int *a);
 long long int shakerSort(int N, int *a);
 int binSearch(int N, int *a, int value);
+
+//lesson4Ex3
+//размерность доски
+#define H 5
+#define W 5
+#define CELLS H*W
+// Доска для коней
+// 0 - пустая клетка
+// Число – номер ферзя
+int board[H][W];
+
+int SearchSolution(int n);
+int CheckBoard();
+int CheckHorse(int x, int y);
+void Print(int n, int m, int a[H][W]);
+void Zero(int n, int m, int a[H][W]);
+void Pause(int key);
+
+//l4Ex2
+#define N_L4 3
+#define M_L4 3
+void Print2(int n, int m, int a[N_L4][M_L4]);
+void Print3(int n, int m, int a[10][8]);
+int max(int a, int b);

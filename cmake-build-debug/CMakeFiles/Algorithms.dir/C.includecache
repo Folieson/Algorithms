@@ -6,32 +6,24 @@
 
 #IncludeRegexTransform: 
 
-/Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Lesson1/Lesson1.c
-Lesson1.h
-/Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Lesson1/Lesson1.h
-
 /Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Lesson1/Lesson1.h
 ../Utils/Utils.h
 /Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Utils/Utils.h
-
-/Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Lesson2/Lesson2.c
-Lesson2.h
-/Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Lesson2/Lesson2.h
 
 /Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Lesson2/Lesson2.h
 ../Utils/Utils.h
 /Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Utils/Utils.h
 
-/Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Lesson3/Lesson3.c
-Lesson3.h
-/Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Lesson3/Lesson3.h
-
 /Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Lesson3/Lesson3.h
 ../Utils/Utils.h
 /Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Utils/Utils.h
 
-/Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Utils/Utils.c
-Utils.h
+/Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Lesson4/Lesson4.c
+Lesson4.h
+/Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Lesson4/Lesson4.h
+
+/Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Lesson4/Lesson4.h
+../Utils/Utils.h
 /Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Utils/Utils.h
 
 /Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Utils/Utils.h
@@ -44,10 +36,6 @@ stdlib.h
 ../main.h
 /Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/main.h
 
-/Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/main.c
-main.h
-/Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/main.h
-
 /Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/main.h
 Lesson1/Lesson1.h
 /Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Lesson1/Lesson1.h
@@ -55,4 +43,6 @@ Lesson2/Lesson2.h
 /Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Lesson2/Lesson2.h
 Lesson3/Lesson3.h
 /Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Lesson3/Lesson3.h
+Lesson4/Lesson4.h
+/Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Lesson4/Lesson4.h
 

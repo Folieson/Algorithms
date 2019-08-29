@@ -26,6 +26,9 @@ void menu() {
             case 3:
                 lesson3();
                 break;
+            case 4:
+                lesson4();
+                break;
             default:
                 printf("Wrong lesson number\n");
                 printf("Exit? 0 - No, try again; 1 - Yes, I want to exit\n");

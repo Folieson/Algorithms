@@ -204,6 +204,33 @@ Lesson3/Lesson3.c.s:
 	$(MAKE) -f CMakeFiles/Algorithms.dir/build.make CMakeFiles/Algorithms.dir/Lesson3/Lesson3.c.s
 .PHONY : Lesson3/Lesson3.c.s
 
+Lesson4/Lesson4.o: Lesson4/Lesson4.c.o
+
+.PHONY : Lesson4/Lesson4.o
+
+# target to build an object file
+Lesson4/Lesson4.c.o:
+	$(MAKE) -f CMakeFiles/Algorithms.dir/build.make CMakeFiles/Algorithms.dir/Lesson4/Lesson4.c.o
+.PHONY : Lesson4/Lesson4.c.o
+
+Lesson4/Lesson4.i: Lesson4/Lesson4.c.i
+
+.PHONY : Lesson4/Lesson4.i
+
+# target to preprocess a source file
+Lesson4/Lesson4.c.i:
+	$(MAKE) -f CMakeFiles/Algorithms.dir/build.make CMakeFiles/Algorithms.dir/Lesson4/Lesson4.c.i
+.PHONY : Lesson4/Lesson4.c.i
+
+Lesson4/Lesson4.s: Lesson4/Lesson4.c.s
+
+.PHONY : Lesson4/Lesson4.s
+
+# target to generate assembly for a file
+Lesson4/Lesson4.c.s:
+	$(MAKE) -f CMakeFiles/Algorithms.dir/build.make CMakeFiles/Algorithms.dir/Lesson4/Lesson4.c.s
+.PHONY : Lesson4/Lesson4.c.s
+
 Utils/Utils.o: Utils/Utils.c.o
 
 .PHONY : Utils/Utils.o
@@ -276,6 +303,9 @@ help:
 	@echo "... Lesson3/Lesson3.o"
 	@echo "... Lesson3/Lesson3.i"
 	@echo "... Lesson3/Lesson3.s"
+	@echo "... Lesson4/Lesson4.o"
+	@echo "... Lesson4/Lesson4.i"
+	@echo "... Lesson4/Lesson4.s"
 	@echo "... Utils/Utils.o"
 	@echo "... Utils/Utils.i"
 	@echo "... Utils/Utils.s"
