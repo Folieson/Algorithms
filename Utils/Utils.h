@@ -12,6 +12,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "../main.h"
+#include<ctype.h>
 
 typedef enum { black, white } colour;
 struct Point {
@@ -86,3 +87,5 @@ int Front;
 void push2(T i);
 
 T pop2();
+
+int precedence(char x);

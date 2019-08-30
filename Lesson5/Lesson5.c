@@ -8,7 +8,7 @@
 void lesson5() {
     bool exit = false;
     while (!exit) {
-        printf("Please, select exercise (from 1 to 3) or 0 to exit to lesson selection\n");
+        printf("Please, select exercise (from 1 to 6) or 0 to exit to lesson selection\n");
         int exercise = 0;
         scanf("%d",&exercise);
         switch (exercise) {
@@ -23,6 +23,15 @@ void lesson5() {
                 break;
             case 3:
                 lesson5Ex3();
+                break;
+            case 4:
+                lesson5Ex4();
+                break;
+            case 5:
+                lesson5Ex5();
+                break;
+            case 6:
+                lesson5Ex6();
                 break;
             default:
                 printf("Wrong exercise number\n");
@@ -46,7 +55,7 @@ void lesson5Ex1() {
 }
 
 void lesson5Ex2() {
-
+    printf("-----\n");
 }
 
 void lesson5Ex3() {
@@ -81,5 +90,53 @@ void lesson5Ex3() {
     } else {
         printf("right expression\n");
     }
+}
+
+void lesson5Ex4() {
+    printf("-----\n");
+}
+
+void lesson5Ex5() {
+    char infix[30] = {"(5+3)*2-3"};
+    char postfix[30];
+    char x,token;
+    int i,j;    //i-index of infix,j-index of postfix
+    j=0;
+
+    for(i=0;infix[i]!='\0';i++) {
+        token=infix[i];
+        if(isalnum(token))
+            postfix[j++]=token;
+        else
+        if(token=='(')
+            push('(');
+        else
+        if(token==')')
+            while((x=pop())!='(')
+                postfix[j++]=x;
+        else {
+            while((precedence(token) <= precedence(Stack[N])) && (N != -1)) {
+                x=pop();
+                postfix[j++]=x;
+            }
+            push(token);
+        }
+    }
+
+    while(N != -1) {
+        x=pop();
+        postfix[j++]=x;
+    }
+
+    postfix[j]='\0';
+
+    for (int k = 0; postfix[k] != '\0' ; ++k) {
+        printf("%c",postfix[k]);
+    }
+    printf("\n");
+}
+
+void lesson5Ex6() {
+
 }
 

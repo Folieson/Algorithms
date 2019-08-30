@@ -325,3 +325,13 @@ T pop2() {
     else
         printf("Queue is empty");
 }
+
+int precedence(char x) {
+    if(x == '(')
+        return 0;
+    if((x == '+') || (x == '-'))
+        return 1;
+    if((x == '*') || (x == '/') || (x == '%'))
+        return 2;
+    return 3;
+}
