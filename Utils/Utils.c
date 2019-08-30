@@ -310,10 +310,8 @@ T pop() {
 N2 = -1;
 Front = -1;
 void push2(T i) {
-    if (Front < MaxN) {
-        Front++;
-        Queue[Front] = i;
-    }
+    if (Front < MaxN)
+        Queue[Front++] = i;
     else
         printf("Queue overflow");
 }

@@ -137,6 +137,19 @@ void lesson5Ex5() {
 }
 
 void lesson5Ex6() {
-
+    push2('H');
+    push2('E');
+    push2('L');
+    push2('L');
+    push2('O');
+    push2(' ');
+    push2('Q');
+    push2('U');
+    push2('E');
+    push2('U');
+    push2('E');
+    while (N2 != Front)
+        printf("%c",pop2());
+    printf("\n");
 }
 
