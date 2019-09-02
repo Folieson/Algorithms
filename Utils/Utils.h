@@ -12,7 +12,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "../main.h"
-#include<ctype.h>
+#include <ctype.h>
 
 typedef enum { black, white } colour;
 struct Point {
