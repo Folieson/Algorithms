@@ -289,3 +289,47 @@ int max(int a, int b){
     if (a > b) return a;
     else return b;
 }
+
+N = -1;
+void push(T i) {
+    if (N < MaxN) {
+        N++;
+        Stack[N] = i;
+    }
+    else
+        printf("Stack overflow");
+}
+
+T pop() {
+    if (N != -1)
+        return Stack[N--];
+    else
+        printf("Stack is empty");
+}
+
+N2 = -1;
+Front = -1;
+void push2(T i) {
+    if (Front < MaxN)
+        Queue[Front++] = i;
+    else
+        printf("Queue overflow");
+}
+
+T pop2() {
+    if (N2 != Front){
+        return Queue[N2++];
+    }
+    else
+        printf("Queue is empty");
+}
+
+int precedence(char x) {
+    if(x == '(')
+        return 0;
+    if((x == '+') || (x == '-'))
+        return 1;
+    if((x == '*') || (x == '/') || (x == '%'))
+        return 2;
+    return 3;
+}

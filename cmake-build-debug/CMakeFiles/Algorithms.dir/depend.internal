@@ -7,6 +7,7 @@ CMakeFiles/Algorithms.dir/Lesson1/Lesson1.c.o
  /Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Lesson2/Lesson2.h
  /Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Lesson3/Lesson3.h
  /Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Lesson4/Lesson4.h
+ /Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Lesson5/Lesson5.h
  /Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Utils/Utils.h
  /Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/main.h
 CMakeFiles/Algorithms.dir/Lesson2/Lesson2.c.o
@@ -15,6 +16,7 @@ CMakeFiles/Algorithms.dir/Lesson2/Lesson2.c.o
  /Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Lesson2/Lesson2.h
  /Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Lesson3/Lesson3.h
  /Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Lesson4/Lesson4.h
+ /Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Lesson5/Lesson5.h
  /Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Utils/Utils.h
  /Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/main.h
 CMakeFiles/Algorithms.dir/Lesson3/Lesson3.c.o
@@ -23,6 +25,7 @@ CMakeFiles/Algorithms.dir/Lesson3/Lesson3.c.o
  /Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Lesson3/Lesson3.c
  /Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Lesson3/Lesson3.h
  /Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Lesson4/Lesson4.h
+ /Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Lesson5/Lesson5.h
  /Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Utils/Utils.h
  /Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/main.h
 CMakeFiles/Algorithms.dir/Lesson4/Lesson4.c.o
@@ -31,6 +34,16 @@ CMakeFiles/Algorithms.dir/Lesson4/Lesson4.c.o
  /Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Lesson3/Lesson3.h
  /Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Lesson4/Lesson4.c
  /Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Lesson4/Lesson4.h
+ /Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Lesson5/Lesson5.h
+ /Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Utils/Utils.h
+ /Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/main.h
+CMakeFiles/Algorithms.dir/Lesson5/Lesson5.c.o
+ /Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Lesson1/Lesson1.h
+ /Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Lesson2/Lesson2.h
+ /Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Lesson3/Lesson3.h
+ /Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Lesson4/Lesson4.h
+ /Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Lesson5/Lesson5.c
+ /Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Lesson5/Lesson5.h
  /Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Utils/Utils.h
  /Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/main.h
 CMakeFiles/Algorithms.dir/Utils/Utils.c.o
@@ -38,6 +51,7 @@ CMakeFiles/Algorithms.dir/Utils/Utils.c.o
  /Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Lesson2/Lesson2.h
  /Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Lesson3/Lesson3.h
  /Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Lesson4/Lesson4.h
+ /Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Lesson5/Lesson5.h
  /Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Utils/Utils.c
  /Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Utils/Utils.h
  /Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/main.h
@@ -46,6 +60,7 @@ CMakeFiles/Algorithms.dir/main.c.o
  /Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Lesson2/Lesson2.h
  /Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Lesson3/Lesson3.h
  /Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Lesson4/Lesson4.h
+ /Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Lesson5/Lesson5.h
  /Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/Utils/Utils.h
  /Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/main.c
  /Users/andrejponamarcuk/Library/Mobile Documents/com~apple~CloudDocs/Developer/C/Algorithms/main.h
