@@ -33,9 +33,12 @@ void lesson6() {
 void lesson6Ex1() {
     char inpStr[] = "Hello, World!";
     int strLen = 13;
-    int result = 0;
+    int mult = 23;
+    long long pow = 1;
+    long long result = 0;
     for (int i = 0; i < strLen; ++i) {
-        result += inpStr[i];
+        result += (inpStr[i] - 'a' + 1) * pow;
+        pow *= mult;
     }
     printf("result = %d\n",result);
 }
@@ -45,5 +48,5 @@ void lesson6Ex2() {
 }
 
 void lesson6Ex3() {
-
+    printf("-------\n");
 }
